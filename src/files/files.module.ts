@@ -4,7 +4,7 @@ import { path } from 'app-root-path'
 
 import { FilesController } from './files.controller'
 import { FilesService } from './files.service'
-console.log(path)
+
 @Module({
 	imports: [
 		ServeStaticModule.forRoot({
