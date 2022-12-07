@@ -12,7 +12,7 @@ async function bootstrap() {
   	next();
 	});
 	app.enableCors();
-	app.use(express.static(join(__dirname, '../uploads')))
+	app.use(express.static(join(__dirname, '..' ,'uploads')))
 	await app.listen(4200)
 }
 bootstrap()
