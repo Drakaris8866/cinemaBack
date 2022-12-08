@@ -12,7 +12,7 @@ async function bootstrap() {
 	});
 	app.enableCors({
 		origin: [
-			'http://localhost:3000',
+			'https://cinema-dy2q84udx-drakaris8866.vercel.app',
 		],
 		methods: ["GET", "POST", "PUT", "DELETE"],
 		credentials: true,
