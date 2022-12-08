@@ -10,13 +10,7 @@ async function bootstrap() {
 		res.header('Access-Control-Allow-Headers', 'Content-Type, Accept');
 		next();
 	});
-	app.enableCors({
-		origin: [
-			'https://cinema-dy2q84udx-drakaris8866.vercel.app',
-		],
-		methods: ["GET", "POST", "PUT", "DELETE"],
-		credentials: true,
-	});
+	app.enableCors();
 	await app.listen(4200)
 }
 bootstrap()
