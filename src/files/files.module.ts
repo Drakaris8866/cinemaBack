@@ -9,6 +9,7 @@ import { FilesService } from './files.service'
 	imports: [
 		ServeStaticModule.forRoot({
 			rootPath: `https://cinema-back-rqi4.vercel.app/`,
+			serveRoot: '/uploads',
 		}),
 	],
 	providers: [FilesService],
